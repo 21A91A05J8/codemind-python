@@ -1,0 +1,16 @@
+n=int(input())
+if n<0:
+    n=-n
+    rev=0
+    while n:
+        r=n%10
+        rev=rev*10+r
+        n=n//10
+    print(-rev)
+else:
+    rev=0
+    while n:
+        r=n%10
+        rev=rev*10+r
+        n=n//10
+    print(rev)
